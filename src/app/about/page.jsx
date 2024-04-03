@@ -71,35 +71,35 @@ const About = () => {
 
         <div className=" grid  grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 lg:grid-8 mt-10">
           <div className=" h-[300px] w-[300px] bg-purple-200 flex flex-col items-center justify-center">
-            <h6 className="text-3xl">Rahul</h6>
-            <p className="lg:text-1xl">Founding Editor</p>
-            <span className="lg:text-sm">rahul@gmail.com</span>
+            <h6 className="text-3xl  text-black font-semibold">Rahul</h6>
+            <p className="lg:text-1xl text-white">Founding Editor</p>
+            <span className="lg:text-sm text-white">rahul@gmail.com</span>
           </div>
 
           <div className="h-[300px] w-[300px] bg-purple-200 flex flex-col items-center justify-center">
-            <h6 className="text-3xl">Rahul</h6>
-            <p className="lg:text-1xl">Founding Editor</p>
-            <span className="lg:text-sm">rahul@gmail.com</span>
+            <h6 className="text-3xl  text-black font-semibold">Rahul</h6>
+            <p className="lg:text-1xl text-white">Founding Editor</p>
+            <span className="lg:text-sm text-white">rahul@gmail.com</span>
           </div>
           <div className="h-[300px] w-[300px] bg-green-200 flex flex-col items-center justify-center">
-            <h6 className="text-3xl">Rahul</h6>
-            <p className="lg:text-1xl">Founding Editor</p>
-            <span className="lg:text-sm">rahul@gmail.com</span>
+            <h6 className="text-3xl  text-black font-semibold">Rahul</h6>
+            <p className="lg:text-1xl text-white">Founding Editor</p>
+            <span className="lg:text-sm text-white">rahul@gmail.com</span>
           </div>
           <div className="h-[300px] w-[300px] bg-red-200 flex flex-col items-center justify-center">
-            <h6 className="text-3xl">Rahul</h6>
-            <p className="lg:text-1xl">Founding Editor</p>
-            <span className="lg:text-sm">rahul@gmail.com</span>
+            <h6 className="text-3xl  text-black font-semibold">Rahul</h6>
+            <p className="lg:text-1xl text-white">Founding Editor</p>
+            <span className="lg:text-sm text-white">rahul@gmail.com</span>
           </div>
           <div className="h-[300px] w-[300px] bg-blue-200 flex flex-col items-center justify-center">
-            <h6 className="text-3xl">Rahul</h6>
-            <p className="lg:text-1xl">Founding Editor</p>
-            <span className="lg:text-sm">rahul@gmail.com</span>
+            <h6 className="text-3xl  text-black font-semibold">Rahul</h6>
+            <p className="lg:text-1xl text-white">Founding Editor</p>
+            <span className="lg:text-sm text-white">rahul@gmail.com</span>
           </div>
           <div className="h-[300px] w-[300px] bg-gray-200 flex flex-col items-center justify-center">
-            <h6 className="text-3xl">Rahul</h6>
-            <p className="lg:text-1xl">Founding Editor</p>
-            <span className="lg:text-sm">rahul@gmail.com</span>
+            <h6 className="text-3xl text-black font-semibold">Rahul</h6>
+            <p className="lg:text-1xl text-white">Founding Editor</p>
+            <span className="lg:text-sm text-white">rahul@gmail.com</span>
           </div>
         </div>
       </div>

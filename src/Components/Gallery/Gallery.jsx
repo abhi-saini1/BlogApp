@@ -14,7 +14,7 @@ const Gallery = () => {
       <div className="py-8 px-5 grid  grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 lg:grid-8">
         {/* image start */}
         <Link
-          href="#"
+          href="/gallery/coding"
           className="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-lg md:h-80"
         >
           <Image
@@ -33,7 +33,7 @@ const Gallery = () => {
 
         {/* image start */}
         <Link
-          href="#"
+          href="/gallery/food"
           className="group relative flex h-48 items-end overflow-hidden rounded-lg md:col-span-2 shadow-lg md:h-80"
         >
           <Image
@@ -52,7 +52,7 @@ const Gallery = () => {
 
         {/* image start */}
         <Link
-          href="#"
+          href="/gallery/travel"
           className="group relative flex h-48 items-end overflow-hidden rounded-lg md:col-span-2 shadow-lg md:h-80"
         >
           <Image
@@ -71,7 +71,7 @@ const Gallery = () => {
 
         {/* image start */}
         <Link
-          href="#"
+          href="/gallery/fashion"
           className="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-lg md:h-80"
         >
           <Image

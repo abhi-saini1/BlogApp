@@ -9,9 +9,11 @@ const Home = () => {
   return (
     <>
       
+      <div className='Container'>
       <Banner/>
       {/* Gallery */}
       <Gallery/>
+      </div>
       
     </>
   )

@@ -32,7 +32,12 @@ const TransitionProvider = ({children}) => {
 
             </motion.div>
             <div className='h-24'>
-                <Header/>
+               <div className='Container'>
+               <Header/>
+               </div>
+                
+                
+                
               
             </div>
             <div className='h-[calc(100vh-6rem)]'>

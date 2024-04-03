@@ -6,6 +6,7 @@ import { ThemeContextProvider } from "@/Components/Context/ThemeContext";
 import ThemeProvider from "@/Components/providers/ThemeProvider";
 import TransitionProvider from "@/Components/providers/TransitionProvider";
 
+
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,17 +18,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <ThemeContextProvider> */}
-          {/* <ThemeProvider> */}
+        <ThemeContextProvider>
+          <ThemeProvider>
             <TransitionProvider>
               <div className="Container">
               {children}
-              </div>
               <Footer/>
+              </div>
             </TransitionProvider>
 
-          {/* </ThemeProvider>
-        </ThemeContextProvider> */}
+          </ThemeProvider>
+        </ThemeContextProvider>
        
       </body>
     </html>

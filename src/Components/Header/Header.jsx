@@ -20,6 +20,10 @@ const Header = () => {
             title: 'About',
         },
         {
+            url: '/gallery',
+            title: 'Gallery',
+        },
+        {
             url: '/contact',
             title: 'Contact',
         }, 
@@ -78,7 +82,7 @@ const Header = () => {
 
         <div className='lg:flex justify-center w-1/5'>
             <Link href='/' className=''>
-                <span className='text-3xl font-bold'>Blog</span>
+                <span className='font-playfair text-3xl font-bold'>Blog</span>
             </Link>
         </div>
         {/* social links */}
@@ -133,7 +137,7 @@ const Header = () => {
 
         {/* Login and Logout */}
         <div className='items-center justify-center gap-4 hidden md:flex lg:flex' >
-            {/* <ThemeToggle/> */}
+            <ThemeToggle/>
             {links?.map((link)=>(
                 <div key={link.url}>
                     <Link href={link.url}>
