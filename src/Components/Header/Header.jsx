@@ -86,7 +86,7 @@ const Header = () => {
             </Link>
         </div>
         {/* social links */}
-        <div className=' gap-2 w-1/5 hidden md:flex'>
+        <div className='gap-2 w-1/5 hidden md:flex'>
             <Image src='/instagram.png' alt='' height={24} width={24}/>
             <Image src='/github.png' alt='' height={24} width={24}/>
             <Image src='/facebook.png' alt='' height={24} width={24}/>
@@ -110,11 +110,11 @@ const Header = () => {
                 <motion.div className='w-10 h-1 bg-black rounded origin-left '
                 variants={BottomVariants}
                 animate={open ? 'opened' : 'closed'}>
-                    
                 </motion.div>
             </button>
+            
             {open && (
-                <motion.div variants={linkVariants} animate='opened' initial='closed' className='absolute top-0 right-0 h-screen w-screen bg-black text-white flex flex-col items-start px-10  justify-center gap-8 text-6xl z-40'>
+                <motion.div variants={linkVariants} animate='opened' initial='closed' className='absolute top-0 right-0 h-screen w-screen bg-black text-white flex flex-col items-start px-10  justify-center gap-8 text-4xl z-40'>
                     {links.map((link)=>(
                         <>
                             <motion.div variants={linkItemVariants} key={link.title}>
