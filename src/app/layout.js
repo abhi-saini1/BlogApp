@@ -1,13 +1,12 @@
-// import { Inter } from "next/font/google";
+
+
 import "./globals.css";
-// import Header from "@/Components/Header/Header";
 import Footer from "@/Components/Footer/Footer";
 import { ThemeContextProvider } from "@/Components/Context/ThemeContext";
 import ThemeProvider from "@/Components/providers/ThemeProvider";
 import TransitionProvider from "@/Components/providers/TransitionProvider";
 
 
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -18,17 +17,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        
         <ThemeContextProvider>
           <ThemeProvider>
+             
             <TransitionProvider>
               <div className="Container">
-              {children}
+
+                {children}
               <Footer/>
               </div>
             </TransitionProvider>
+              
 
           </ThemeProvider>
         </ThemeContextProvider>
+       
        
       </body>
     </html>
