@@ -42,4 +42,11 @@ body{
 
 
 
-
+.Content{
+  display: flex;
+}
+@media (max-width: 991px) {
+  .Content{
+    flex-direction: column;
+  }
+}
