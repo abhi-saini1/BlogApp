@@ -9,7 +9,7 @@ const CardItems = () => {
                 <h2 className='lg:text-5xl text-3xl font-bold font-playfair'>Recent Posts</h2>
             </div>
 
-            <div className='py-3 lg:w-[800px] sm:w-1/1'>
+            <div className='py-3 lg:w-[800px] sm:w-1/1 '>
                 <Card/>
             </div>
         </div>
