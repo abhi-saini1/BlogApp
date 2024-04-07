@@ -7,7 +7,7 @@ import { FaRegMoon } from "react-icons/fa";
 
 const ThemeToggle = () => {
   const {toggle,theme} = useContext(ThemeContext)
-  console.log(theme);
+  // console.log(theme);
    
   return (
     <div className='flex cursor-pointer w-[40px] h-[20px] items-center ' onClick={toggle} >

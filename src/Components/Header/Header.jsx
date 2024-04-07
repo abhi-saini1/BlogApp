@@ -106,10 +106,24 @@ const Header = () => {
         </div>
         {/* social links */}
         <div className="gap-2 w-1/5 hidden md:flex">
-          <Image src="/instagram.png" alt="" height={24} width={24} />
-          <Image src="/github.png" alt="" height={24} width={24} />
-          <Image src="/facebook.png" alt="" height={24} width={24} />
-          <Image src="/linkedin.png" alt="" height={24} width={24} />
+          <Link href="/">
+            <Image src="/instagram.png" alt="" height={24} width={24} />
+          </Link>
+          <Link href="/">
+            <Image
+              src="/github.png "
+              className="bg-white border rounded"
+              alt=""
+              height={24}
+              width={24}
+            />
+          </Link>
+          <Link href="/">
+            <Image src="/facebook.png" alt="" height={24} width={24} />
+          </Link>
+          <Link href="/">
+            <Image src="/linkedin.png" alt="" height={24} width={24} />
+          </Link>
         </div>
 
         {/* menu button */}

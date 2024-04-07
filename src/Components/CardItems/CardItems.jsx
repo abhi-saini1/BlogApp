@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Card/Card'
+import Pagination from '../Pagination/Pagination'
 
 const CardItems = () => {
   return (
@@ -13,6 +14,7 @@ const CardItems = () => {
                 <Card/>
             </div>
         </div>
+        <Pagination/>
     </div>
   )
 }

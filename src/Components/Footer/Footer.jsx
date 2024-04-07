@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
+  // scroll to top
   const [isVisible, setVisible] = useState(false);
 
   const listenScroll = () => {
@@ -54,6 +55,7 @@ const Footer = () => {
         </div>
         <div className="text-center">© 2024 Acme Inc. All rights reserved.</div>
       </footer>
+      {/* scroll to top */}
       {isVisible && (
         <div
           className="flex items-center  justify-center w-[50px] h-[50px]  fixed right-0 bottom-8 z-50 cursor-pointer bg-black text-center border rounded-lg text-white"
