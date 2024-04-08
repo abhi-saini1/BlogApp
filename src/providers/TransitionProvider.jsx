@@ -2,8 +2,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation'
 // import React, { Children } from 'react'
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../Components/Header/Header';
+import Footer from '../Components/Footer/Footer';
 
 const TransitionProvider = ({children}) => {
     const pathname = usePathname();

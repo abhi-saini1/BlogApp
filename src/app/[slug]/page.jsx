@@ -6,6 +6,7 @@ import Comments from '@/Components/Comments/Comments'
 
 
 const SinglePage = () => {
+   
   return (
     <motion.div
       className="h-full"

@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
+import { signIn, useSession } from "next-auth/react";
 const Login = () => {
+    const {data,status} = useSession()
+    console.log(data,status)
     return (
         <motion.div
             className="h-full"
@@ -41,7 +43,7 @@ const Login = () => {
                                  Login here
                             </Link>
                         </p>
-                        <button className=" -2 mt-8 flex items-center text-white bg-black justify-center rounded-md border px-4 py-1 outline-none  ring-offset-2 transition hover:before-transparent focus:ring-2">
+                        <button onClick={()=> signIn('google')} className=" -2 mt-8 flex items-center text-white bg-black justify-center rounded-md border px-4 py-1 outline-none  ring-offset-2 transition hover:before-transparent focus:ring-2">
                             <FcGoogle className="mr-2 h-5"/>
                             Get started with Google
                         </button>

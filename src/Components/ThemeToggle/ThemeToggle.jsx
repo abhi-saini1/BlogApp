@@ -1,6 +1,6 @@
 'use client';
 import React, { useContext } from 'react'
-import { ThemeContext } from '../Context/ThemeContext';
+import { ThemeContext } from '../../Context/ThemeContext';
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { FaRegMoon } from "react-icons/fa";
 

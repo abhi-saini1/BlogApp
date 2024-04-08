@@ -7,12 +7,14 @@ import CategoryList from '@/Components/CategoryList/CategoryList'
 import CardItems from '@/Components/CardItems/CardItems'
 import SideMenu from '@/Components/SideMenu/SideMenu'
 
+
 const Home = () => {
+  
 
   return (
     <>
       
-      <div className='Container'>
+      <div className='Container' >
       <Banner/>
       <CategoryList/>
         <div className='Content'>
@@ -28,4 +30,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

@@ -1,10 +1,12 @@
 
-
 import "./globals.css";
 import Footer from "@/Components/Footer/Footer";
-import { ThemeContextProvider } from "@/Components/Context/ThemeContext";
-import ThemeProvider from "@/Components/providers/ThemeProvider";
-import TransitionProvider from "@/Components/providers/TransitionProvider";
+import { ThemeContextProvider } from "@/Context/ThemeContext";
+import AuthProvider from "@/providers/AuthProvider";
+import ThemeProvider from "@/providers/ThemeProvider";
+import TransitionProvider from "@/providers/TransitionProvider";
+
+
 
 
 
@@ -14,24 +16,34 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
+
+
+  
+  
+
+ 
   return (
-    <html lang="en">
+    <html>
       <body>
-        
+        <AuthProvider>
+
         <ThemeContextProvider>
           <ThemeProvider>
              
             <TransitionProvider>
               <div className="Container">
-
+           
                 {children}
               <Footer/>
+               
               </div>
             </TransitionProvider>
               
 
           </ThemeProvider>
         </ThemeContextProvider>
+        </AuthProvider>
        
        
       </body>
