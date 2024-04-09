@@ -4,9 +4,17 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import { signIn, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 const Login = () => {
     const {data,status} = useSession()
-    console.log(data,status)
+    const router = useRouter();
+    // console.log(data,status)
+    if(status === "loading"){
+        return <div className="">Loading...</div>
+    }
+    if(status === "authenticated"){
+        router.push('/')
+    }
     return (
         <motion.div
             className="h-full"

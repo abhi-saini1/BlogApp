@@ -1,5 +1,5 @@
 'use client';
-import { useSession } from 'next-auth/react'
+import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -15,7 +15,7 @@ const AuthLinks = () => {
     ) :(
       <>
       <Link href='/write' className='cursor-pointer'>Write</Link>
-      <span className='cursor-pointer' >logout</span>
+      <span className='cursor-pointer' onClick={()=> signOut()} >logout</span>
       </>
     )}
       </div>
