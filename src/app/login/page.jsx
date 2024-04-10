@@ -6,7 +6,7 @@ import { FcGoogle } from "react-icons/fc";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 const Login = () => {
-    const {data,status} = useSession()
+    const {status} = useSession()
     const router = useRouter();
     // console.log(data,status)
     if(status === "loading"){
@@ -22,7 +22,7 @@ const Login = () => {
             animate={{ y: 0 }}
             transition={{ duration: 1 }}
         >
-            <div className="flex w-screen flex-wrap text-slate-800 lg:px-4 ">
+            <div className="flex h-full w-full flex-wrap text-slate-800 lg:px-4 ">
                 <div className="relative hidden h-screen select-none flex-col justify-center bg-blue-600 text-center md:flex md:w-1/2">
                     <div className="mx-auto py-16 px-8 text-white xl:w-[40rem]">
                         <span className="rounded-full bg-white px-3 py-1 font-medium text-blue-600">New Feature</span>
