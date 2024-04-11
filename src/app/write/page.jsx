@@ -7,9 +7,21 @@ import { GrGallery } from "react-icons/gr";
 import { GoVideo } from "react-icons/go";
 import { IoCloudUploadOutline } from "react-icons/io5";
 import Link from 'next/link';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
-const Write = () => {
+const WritePage = () => {
     const [open,setOpen] = useState(false);
+    
+    // const {status} = useSession()
+    // const router = useRouter();
+
+    // if(status === "loading"){
+    //     return <div className="">Loading...</div>
+    // }
+    // if(status === "authenticated"){
+    //     router.push('/')
+    // }
     return (
         <motion.div
             className="h-full"
@@ -63,4 +75,4 @@ const Write = () => {
     )
 }
 
-export default Write
+export default WritePage

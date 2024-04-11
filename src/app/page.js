@@ -8,8 +8,9 @@ import CardItems from '@/Components/CardItems/CardItems'
 import SideMenu from '@/Components/SideMenu/SideMenu'
 
 
-const Home = () => {
+const Home = ({searchParams}) => {
   
+  const page = parseInt(searchParams.page) || 1; 
 
   return (
     <>
@@ -18,7 +19,7 @@ const Home = () => {
       <Banner/>
       <CategoryList/>
         <div className='Content'>
-        <CardItems/>
+        <CardItems page={page}/>
         <SideMenu/>
         
         </div>
