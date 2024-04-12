@@ -13,15 +13,15 @@ import { useRouter } from 'next/navigation';
 const WritePage = () => {
     const [open,setOpen] = useState(false);
     
-    // const {status} = useSession()
-    // const router = useRouter();
+    const {status} = useSession()
+    const router = useRouter();
 
-    // if(status === "loading"){
-    //     return <div className="">Loading...</div>
-    // }
-    // if(status === "authenticated"){
-    //     router.push('/')
-    // }
+    if(status === "loading"){
+        return <div className="">Loading...</div>
+    }
+    if(status === "authenticated"){
+        router.push('/write')
+    }
     return (
         <motion.div
             className="h-full"
