@@ -6,13 +6,23 @@ const Card = ({key,item}) => {
   return (
     <>
       <div className="card card-side bg-base-100 shadow-xl mt-4" key={key}>
-        {item.img && (<Image
+        {item?.img ? ( 
+        <Image
           src={item.img}
           className="w-[350px] h-[200px] lg:w-[600px] lg:h-[400px] sm:w-[450px] sm:h-[250px] "
           width={800}
           height={800}
-          alt=""
-        />)}
+          alt=""/>
+        ) : ( 
+            <>
+              <Image
+                src='/posts.jpg'
+                className="w-[350px] h-[200px] lg:w-[600px] lg:h-[400px] sm:w-[450px] sm:h-[250px] "
+                width={800}
+                height={800}
+                alt=""/>
+            </>
+            )}
 
         <div className="card-body rounded-lg">
           <h2 className="card-title  text-black font-semibold">
@@ -35,7 +45,7 @@ const Card = ({key,item}) => {
         </div>
       </div>
       
-     
+    
     </>
   );
 };

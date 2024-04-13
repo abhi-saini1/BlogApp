@@ -24,7 +24,7 @@ const CategoryList = async () => {
       <div className="py-8 grid  sm:grid-cols-2 md:grid-cols-3   lg:grid-cols-6 gap-4  items-center justify-center">
        
           {data?.map((item)=>(
-            <Link href='/blog?cat=s' key={item._id} >
+            <Link href='/blog?cat=travel' key={item._id} >
             <div className="flex items-center justify-center  capitalize w-[200px] h-20 border rounded bg-red-300">
               <div className="flex items-center">
                {item.img && (

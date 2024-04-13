@@ -4,18 +4,19 @@ import Pagination from '../Pagination/Pagination'
 
 
 
-const getData = async (page,cat) =>{
-  const res = await fetch(`http://localhost:3000/api/posts?page=${page}&cat=${cat || " "}`,{
+const getData = async (page,cat)=>{
+  const res = await fetch(`http://localhost:3000/api/posts?page=${page}&cat=${cat || " "}`,
+  {
     cache: 'no-store',
+  
   })
   if(!res.ok){
-    throw new Error('failed')
+    throw new Error('failed');
   }
   return res.json();
 }
-
-const CardItems = async ({page}) => {
-  const {posts,count} = await getData(page)
+const CardItems = async ({page,cat}) => {
+  const {posts,count} = await getData(page,cat)
 
   const POST_PER_PAGE = 2
 
