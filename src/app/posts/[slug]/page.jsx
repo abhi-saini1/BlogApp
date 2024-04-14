@@ -19,9 +19,8 @@ const getData = async (slug) => {
 
 const SinglePage = async ({params}) => {
   const {slug} = params;
-  console.log(slug);
   const data = await getData(slug)
-  console.log(data)
+  
   return (
     // <motion.div
     //   className="h-full"
@@ -66,7 +65,7 @@ const SinglePage = async ({params}) => {
       <div className='h-full py-20  lg:flex-row px-4 md:px-20 sm:px-12 lg:px-20 gap-3'>
        
         <div className=' items-center justify-between lg:flex lg:items-center'>
-        <Comments/>
+        <Comments postSlug={slug}/>
         <Image src='/comments.svg' className='w-[500px] h-[500px]' alt='' width={800} height={800} />
         </div> 
       </div>
