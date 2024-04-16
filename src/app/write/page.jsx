@@ -13,7 +13,6 @@ import { useRouter } from "next/navigation";
 import { app } from "@/utils/firebase";
 
 
-
 const WritePage = () => {
   const [open, setOpen] = useState(false);
   const { status } = useSession();
@@ -22,9 +21,10 @@ const WritePage = () => {
   const [file,setFile] = useState(null);
   const [media,setMedia] = useState('');
   const [title,setTitle] = useState('');
-
+  
   useEffect(() => {
     const storage = getStorage(app);
+  
     const upload = () => {
       const name = new Date().getTime() + file.name;
       const storageRef = ref(storage, name);
@@ -82,7 +82,7 @@ const WritePage = () => {
             desc: value,
             img: media,
             slug: slugify(title),
-            catSlug: "travel",
+           
           }),
         });
         console.log(res)
@@ -115,7 +115,7 @@ const WritePage = () => {
             {open && (
               <>
                <button className="flex">
-               <label htmlFor="image">
+               <label>
                 <div className="m-2 cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                   <IoCloudUploadOutline className="w-[20px] h-[20px]" />
                 </div>
@@ -125,7 +125,7 @@ const WritePage = () => {
                   <GrGallery className="w-[20px] h-[20px]" />
                 </div>
                 </label>
-                <label htmlFor="image">
+                <label>
 
                 <div className="m-2 cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                   <GoVideo className="w-[20px] h-[20px]" />

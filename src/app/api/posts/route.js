@@ -1,6 +1,6 @@
 import { getAuthSession } from "@/utils/auth";
-import prisma from "@/utils/connect"
-import {NextResponse} from 'next/server'
+import prisma from "@/utils/connect";
+import { NextResponse } from "next/server";
 
 export const GET = async(req)=>{
     const {searchParams} = new URL(req.url)
@@ -29,7 +29,7 @@ export const GET = async(req)=>{
     }
 }
 
-
+// create a Post
 export const POST = async (req) => {
     const session = await getAuthSession();
   

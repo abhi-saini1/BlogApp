@@ -20,6 +20,7 @@ const getData = async (slug) => {
 const SinglePage = async ({params}) => {
   const {slug} = params;
   const data = await getData(slug)
+  console.log(data);
   
   return (
     // <motion.div
@@ -52,7 +53,7 @@ const SinglePage = async ({params}) => {
         <div className="">
           {data?.img &&
           <Image
-          src={data.img}
+          src={data?.img}
           className="object-contain rounded-lg h-[350px] lg:h-[400px]"
           width={800}
           height={800}
@@ -72,7 +73,7 @@ const SinglePage = async ({params}) => {
 
     </>
       
-    // </motion.div>
+    //  </motion.div>
   )
 }
 
